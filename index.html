@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Datingbook</title>
+    <meta name="viewport" content="width=380">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimzied" content="width">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="https://cdn-bimi.akamaized.net/images/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./assets/main.css">
+    <link rel="stylesheet" href="css/generator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script>
+        function fdateTwoDigits(d) {
+            let now = new Date();
+            now.setDate(now.getDate() + d);
+            let mm = now.getMonth() + 1;
+            let day = now.getDate();
+            if (now.getDate() < 10) day = '0' + now.getDate();
+            if (mm < 10) mm = '0' + mm;
+            document.write(" " + day + "." + mm + "." + now.getFullYear() + " ");
+        }
+    </script>
+
+</head>
+
+<body class="page_article  mode-adaptive">
+    <script src="counter.js"></script>
+    <div class="wrapper">
+        <header class="header">
+            <p>Reduslim</p>
+            <img src="./assets/img/fb_icon_1.png" class="fb_icons_1">
+        </header>
+        <div class="content">
+            <div class="step active">
+                <p class="title">Vacci piano!</p>
+                <p class="text">Assumendo regolarmente 1-2 capsule di "Reduslim" al giorno, puoi perdere fino a 15 kg in 1 mese</p>
+                <button class="btn js-next">Ulteriore</button>
+            </div>
+            <div class="step">
+                <p class="title">Come funziona?</p>
+                <p class="text">Questo integratore permette di riattivare i processi metabolici in modo da bruciare la massa grassa in eccesso e mantenere il peso stabile in futuro</p>
+                <button class="btn js-next">Ulteriore</button>
+            </div>
+            <div class="step">
+                <div class="step__bariants">
+                    <p class="step-item active">
+                        1
+                    </p>
+                    <p class="step-item">
+                        2
+                    </p>
+                </div>
+                <p class="text" data-translate="translate">Hai più di 30 anni? </p>
+                <div class="wrap-btns">
+                    <button class="btn js-next">SÍ</button>
+                    <button class="btn js-next">NO</button>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__bariants">
+                    <p class="step-item active">
+                        1
+                    </p>
+                    <p class="step-item active">
+                        2
+                    </p>
+                </div>
+                <p class="text" data-translate="translate">Ti piacerebbe provare a perdere peso senza diete estenuanti?</p>
+                <div class="wrap-btns">
+                    <button class="btn js-next">SÍ</button>
+                    <button class="btn js-next">NO</button>
+                </div>
+            </div>
+            <div class="step">
+                <p class="title">Come funziona?</p>
+                <p>Questo integratore permette di riattivare i processi metabolici in modo da bruciare la massa grassa in eccesso e mantenere il peso stabile in futuro</p>
+                <form id="order_form2" action="lucky.php" method="POST" class="al-form intlTelInput">
+                    <select name="country"></select>
+
+                    <div class="phone-input">
+                        <input id="phone-input" type="text" name="name" placeholder="Inserite il vostro nome" required="required" class="error">
+                    </div>
+                    <div class="name-input">
+                        <input id="name-input" type="tel" name="phone" placeholder="Il tuo numero di telefono" required="required">
+                    </div>
+                    <input type='hidden' name='subid' value='{clickid}' />
+                    <input type='hidden' name='subid1' value='{clickid}' />
+                    <button type="submit" class="btn button-submit">Ordina Reduslim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/generator.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="jquery-2.2.4.min.js"></script>
+
+    <select name="country" style="display:none;"></select>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+    <script src='js/pixel.js'></script>
+
+
+    <!-- Скрипт для якоря к форме -->
+    <script>
+        $("a").addClass('to_form');
+    </script>
+    <!-- Перед ФОРМОЙ обязательно создайте <div> и добавьте к нему id="#form" -->
+    <script>
+        $(".to_form").on("touchend, click", function(e) {
+            e.preventDefault();
+            $('body,html').animate({
+                scrollTop: $('#order_form').offset().top
+            }, 400);
+        });
+    </script>
+    <!-- price.js- скрипт подключения цены, при необходимости скачайте его и удалите слеши и точки перед price.js (../../) -->
+    <script defer src="price.js"></script>
+</body>
+
+</html>
