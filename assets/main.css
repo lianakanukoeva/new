@@ -60,6 +60,7 @@ body {
 .header img {
     max-width: 80px;
     max-height: 35px;
+    height: 35px;
     cursor: pointer;
 }
 
