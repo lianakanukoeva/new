@@ -72,7 +72,7 @@ body {
     padding: 25px;
 }
 
-img {
+.image img {
     display: block;
     max-width: 107px;
     max-height: 104px;
