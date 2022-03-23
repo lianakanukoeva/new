@@ -32,7 +32,7 @@ body {
     max-width: 900px;
     height: 100%;
     width: 100%;
-    background: url(./img/001.jpg) 100% 100% no-repeat;
+    background: url(./img/fon.jpg) 100% 100% no-repeat;
     background-position: center;
     background-size: cover;
     margin: auto;
@@ -61,6 +61,20 @@ body {
     max-width: 80px;
     max-height: 35px;
     cursor: pointer;
+}
+
+.image {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 25px;
+}
+
+img {
+    display: block;
+    max-width: 107px;
+    max-height: 104px;
 }
 
 .content {
